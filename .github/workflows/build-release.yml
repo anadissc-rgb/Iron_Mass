@@ -60,7 +60,7 @@ jobs:
       - name: Build Release APK
         run: |
           if [ -n "$KEYSTORE_B64" ]; then
-            echo "$KEYSTORE_B64" | base64 --decode > ironmass-release.keystore
+            echo "$KEYSTORE_B64" | tr -d '\n\r ' | base64 --decode > ironmass-release.keystore
             export KEYSTORE_PATH="$(pwd)/ironmass-release.keystore"
             export STORE_PASSWORD="$STORE_PASS"
             export KEY_PASSWORD="$KEY_PASS"
