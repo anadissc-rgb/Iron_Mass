@@ -1,0 +1,6 @@
+{
+  "name": "Iron Mass",
+  "description": "4-Week Advanced Periodization program tracking weight, reps, progressive overload, rest timers, and custom nutrition targets from the Fitness Phantom.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
